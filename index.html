@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Внутри технологий - Мероприятия для юных инженеров</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <img src="https://teklif.yahyaaydin.com.tr/panel/upload/img/chatgpt-image-22-eyl-2025-18-01-22-11758557305.png" alt="Внутри технологий Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Внутри технологий</h1>
+                </div>
+            </div>
+            <button id="themeToggle" class="theme-toggle">
+                <span id="themeIcon">☀️</span>
+            </button>
+        </header>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="about">О технополисе</button>
+            <button class="nav-tab" data-tab="benefits">Зачем нужны мероприятия</button>
+            <button class="nav-tab" data-tab="events">Календарь мероприятий</button>
+            <button class="nav-tab" data-tab="favorites">
+                <i class="fas fa-heart"></i> Избранное
+                <span id="favoritesCount" class="favorites-badge">0</span>
+            </button>
+            <button class="nav-tab" data-tab="archive">
+                <i class="fas fa-archive"></i> Архив
+                <span id="archiveCount" class="favorites-badge">0</span>
+            </button>
+            <button class="nav-tab" data-tab="team">Команда разработчиков</button>
+        </div>
+
+        <!-- Секция "О технополисе" -->
+        <section id="aboutSection" class="content-section active">
+            <div class="about-card">
+                <h2 class="about-title">О технополисе</h2>
+                <div class="about-text">
+                    <p>Технополис - уникальное образовательное учреждение открытого образовательного пространства самоопределения личности в мире современных профессий, в котором происходит вовлечение обучающихся в исследовательскую и проектную деятельность в сфере технического творчества, информационных технологий.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature" data-filter-type="robotics">
+                        <i class="fas fa-robot"></i>
+                        <h3>Робототехника</h3>
+                        <p>Соревнования и кружки по робототехнике разных уровней</p>
+                        <button class="feature-btn">Смотреть мероприятия →</button>
+                    </div>
+                    <div class="feature" data-filter-type="3d">
+                        <i class="fas fa-cube"></i>
+                        <h3>3D-технологии</h3>
+                        <p>Моделирование, прототипирование, инженерные олимпиады</p>
+                        <button class="feature-btn">Смотреть мероприятия →</button>
+                    </div>
+                    <div class="feature" data-filter-type="it">
+                        <i class="fas fa-code"></i>
+                        <h3>IT-направления</h3>
+                        <p>Хакатоны, программирование, цифровые технологии</p>
+                        <button class="feature-btn">Смотреть мероприятия →</button>
+                    </div>
+                    <div class="feature" data-filter-type="innovation">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Инновации</h3><p>Современные технологии и изобретательство</p>
+                        <button class="feature-btn">Смотреть мероприятия →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Зачем нужны мероприятия детям" -->
+        <section id="benefitsSection" class="content-section">
+            <div class="benefits-card">
+                <h2 class="benefits-title">Зачем нужны мероприятия детям?</h2>
+                <div class="benefits-intro">
+                    <p>Участие в технических мероприятиях — это не просто интересное времяпрепровождение, а важный шаг в развитии ребенка. Вот почему стоит принимать участие в событиях Технополиса:</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🚀</div>
+                        <h3>Развитие навыков будущего</h3>
+                        <p>Мероприятия помогают освоить востребованные навыки: программирование, 3D-моделирование, робототехнику, работу с искусственным интеллектом.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💡</div>
+                        <h3>Инженерное мышление</h3>
+                        <p>Участие в олимпиадах и хакатонах развивает логику, умение решать сложные задачи, находить нестандартные решения.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🤝</div>
+                        <h3>Командная работа</h3>
+                        <p>Дети учатся работать в коллективе, распределять задачи, договариваться и достигать общей цели.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🏆</div>
+                        <h3>Достижения и портфолио</h3>
+                        <p>Дипломы и награды — весомый вклад в портфолио, учитываются при поступлении в вузы.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <h3>Профориентация</h3>
+                        <p>Знакомство с реальными профессиями: инженер, разработчик, 3D-дизайнер, робототехник.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🌍</div>
+                        <h3>Новые знакомства</h3>
+                        <p>Общение с единомышленниками, обмен опытом, новые друзья.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Развитие soft skills</h3>
+                        <p>Коммуникабельность, уверенность, умение презентовать проекты.</p>
+                    </div>
+                </div>
+                <div class="benefits-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>«Участие в мероприятиях — это инвестиция в будущее вашего ребенка. Каждое событие открывает новые горизонты!»</p>
+                    <span>— Команда Технополиса</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Календарь мероприятий" -->
+        <section id="eventsSection" class="content-section">
+            <div class="filters-panel">
+                <div class="filter-section">
+                    <div class="filter-label">
+                        <i class="fas fa-tag"></i> Направления
+                    </div>
+                    <div class="category-buttons">
+                        <button class="category-btn active" data-category="all">Все направления</button>
+                        <button class="category-btn" data-category="robotics">Робототехника</button>
+                        <button class="category-btn" data-category="3d">3D-технологии</button><button class="category-btn" data-category="it">IT-направления</button>
+                        <button class="category-btn" data-category="innovation">Инновации</button>
+                    </div>
+                </div>
+                <div class="filter-divider"></div>
+                <div class="filter-section">
+                    <div class="filter-label">
+                        <i class="fas fa-calendar-alt"></i> Сезоны
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Все события</button>
+                        <button class="filter-btn" data-filter="Осень">Осень</button>
+                        <button class="filter-btn" data-filter="Зима">Зима</button>
+                        <button class="filter-btn" data-filter="Весна">Весна</button>
+                        <button class="filter-btn" data-filter="Лето">Лето</button>
+                    </div>
+                </div>
+            </div>
+            <div class="results-counter">
+                Найдено <span id="eventsCount">0</span> мероприятий
+            </div>
+            <div class="events-grid" id="eventsGrid"></div>
+            
+            <!-- Блок с тестом -->
+            <div class="quiz-section">
+                <div class="quiz-header">
+                    <div class="quiz-icon">🤔</div>
+                    <div class="quiz-title">
+                        <h3>Не можете выбрать мероприятие?</h3>
+                        <p>Пройдите тест, который поможет вам определиться!</p>
+                    </div>
+                </div>
+                <div id="quizContainer" class="quiz-container">
+                    <div id="quizQuestion" class="quiz-question"></div>
+                    <div id="quizOptions" class="quiz-options"></div>
+                    <div id="quizResult" class="quiz-result"></div>
+                    <button id="quizResetBtn" class="quiz-reset-btn" style="display: none;">Пройти тест заново</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Избранное" -->
+        <section id="favoritesSection" class="content-section">
+            <div class="favorites-header">
+                <h2><i class="fas fa-heart"></i> Избранные мероприятия</h2>
+                <p>Здесь собраны мероприятия, которые вы отметили как интересные</p>
+            </div>
+            <div class="favorites-grid" id="favoritesGrid"></div>
+            <div id="emptyFavorites" class="empty-favorites" style="display: none;">
+                <i class="far fa-heart"></i>
+                <h3>У вас пока нет избранных мероприятий</h3>
+                <p>Перейдите в "Календарь мероприятий" и нажмите на сердечко на карточке</p>
+                <button class="go-to-events-btn" id="goToEventsBtn">Перейти к мероприятиям →</button>
+            </div>
+        </section>
+
+        <!-- Секция "Архив" -->
+        <section id="archiveSection" class="content-section">
+            <div class="favorites-header">
+                <h2><i class="fas fa-archive"></i> Архив мероприятий</h2>
+                <p>Здесь хранятся мероприятия, которые вы отметили как неинтересные</p>
+            </div>
+            <div class="archive-grid" id="archiveGrid"></div>
+            <div id="emptyArchive" class="empty-favorites" style="display: none;">
+                <i class="fas fa-archive"></i>
+                <h3>Архив пуст</h3>
+                <p>Перейдите в "Календарь мероприятий" и нажмите на корзину на карточке</p>
+                <button class="go-to-events-btn" id="goToEventsFromArchive">Перейти к мероприятиям →</button>
+            </div>
+        </section>
+
+        <!-- Секция "Команда разработчиков" -->
+        <section id="teamSection" class="content-section">
+            <div class="team-card">
+                <h2 class="team-title">Команда разработчиков</h2>
+                <p class="team-subtitle">Над созданием сайта работали талантливые специалисты</p><div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">👨‍💻</div>
+                        <h3>Иван Петров</h3>
+                        <p class="member-role">Frontend-разработчик</p>
+                        <p class="member-desc">Отвечает за внешний вид сайта, адаптивный дизайн и интерактивные элементы</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">🎨</div>
+                        <h3>Анна Смирнова</h3>
+                        <p class="member-role">UI/UX Дизайнер</p>
+                        <p class="member-desc">Разработала дизайн интерфейса, подобрала цветовую гамму</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">⚙️</div>
+                        <h3>Дмитрий Козлов</h3>
+                        <p class="member-role">Backend-разработчик</p>
+                        <p class="member-desc">Отвечает за работу с данными, фильтрацию и сохранение избранного</p>
+                    </div>
+                </div>
+                <div class="team-footer">
+                    <p>Сайт разработан с любовью к технологиям и образованию</p>
+                    <p class="team-copyright">© 2024 Внутри технологий | Все права защищены</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Внутри технологий — пространство для развития инженерного мышления и технологического творчества.</p>
+            <p>Присоединяйтесь к нашим мероприятиям!</p>
+        </footer>
+    </div>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription"></p>
+                <div class="modal-details">
+                    <span id="modalMonth"></span>
+                    <span id="modalSeason"></span>
+                    <span id="modalCategory"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
